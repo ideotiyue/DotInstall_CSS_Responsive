@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- 表示領域の設定はviewportと呼ばれる。
+  スマホの画面幅に表示領域の幅を合わせる→width=device-width 
+  最初のズーム設定を等倍にする→initial-scale= 1  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySite</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section>
+
+    <div class="image">
+      <img src="../CSS基礎文法/img/logo.png">
+    </div>
+
+    <div class="text">
+      <h1>レスポンシブウェブデザイン</h1>
+      <p>
+        mediaクエリを用いて、viewportの幅に応じてスタイルを切り替える。スタイルが切り替わるときのviewportの幅をブレイクポイントと呼ぶ。<br>
+        複数パターン作る場合、CSSではあとから書いたものが優先される仕組みを使って、共通のスタイルは先に書いて必要な分だけあとから上書きしていく、というテクニックがよく使われる。
+      </p>
+      
+      <h2>▼Viewportの幅の最低/最大値を指定するmediaクエリ</h2>
+      <h3>@media (min-width: 600px) and (max-width: 800px) {　}</h3>
+      <p>
+        ※()の前後には、半角空白が必ず必要な点に注意
+      </p>
+      
+      <h1>モバイルファースト</h1>
+      <p>
+        このファイルで使用しているテクニックは、
+        CSS はあとから書いたもので上書きされるという仕組みを使っている。<br>
+        ブラウザ幅の条件を小さい順に書いたときだけ使えるという点に注意。<br>
+        このようなメディアクエリはモバイルサイトのスタイルから順番に作っていくという意味でモバイルファーストと呼ばれる。
+      </p>
+    </div>
+    <aside>add</aside>
+  </section>
+</body>
+</html>

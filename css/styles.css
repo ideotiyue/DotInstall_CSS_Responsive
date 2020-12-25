@@ -1,0 +1,55 @@
+/* @media (min-width: 0px) and (max-width: 599px) {
+  最初にスタイルが切り替わるのは 600px のときなので、 0px から 599px までのスタイルは、共通のスタイルに書いてあげればOK
+} */
+body {
+  margin: 0;
+}
+
+.image {
+  background: rgb(255, 199, 44);
+  height: 100px;
+}
+
+img {
+  width:100%;
+  height: 100%;
+  object-fit: scale-down;
+ }
+
+.text {
+  background: silver;
+  height: 100px;
+  overflow: scroll;
+}
+
+aside {
+  display: none;
+}
+/* medium screen */
+@media (min-width: 600px) {
+  section {
+    display: flex;
+  }
+
+  .image {
+    width: 200px;
+  }
+
+  .text {
+    flex: 1;
+  }
+}
+
+/* large screen */
+@media (min-width: 800px) {
+  section{
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  aside {
+    display: block;
+    background-color: salmon;
+    width: 160px;
+  }
+}
